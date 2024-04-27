@@ -13,7 +13,7 @@ iris = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/ir
                    names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species'])
 
 # Taking input from the user
-input_number = int(input("Enter the number against what you would like this program to do: \n1.Output a summary of each variable to a single text file(Enter 1) \n2.Save a histogram of each variable to png files(Enter 2) \n3.Output a scatter plot of each pair of variables(Enter 3)\n"))
+input_number = int(input("Enter the number against what you would like this program to do: \n1.Output a summary of each variable to a single text file(Enter 1) \n2.Save a histogram of each variable to png files(Enter 2) \n3.Output a scatter plot of each pair of variables(Enter 3) \n0.Exit \n"))
 
 # Function to output a summary of each variable to a single text file
 if input_number == 1:
@@ -36,10 +36,15 @@ elif input_number == 3:
     plt.savefig('scatter_plot.png')
     print("Scatter plot of each pair of variables has been saved to a png file named 'scatter_plot.png'.")
 
-# If the user enters an invalid number
-else:
-    print("Invalid number entered. Please enter a valid number.")
-    print("Enter the number against what you would like this program to do: \n1.Output a summary of each variable to a single text file(Enter 1) \n2.Save a histogram of each variable to png files(Enter 2) \n3.Output a scatter plot of each pair of variables(Enter 3)\n")
+# Function to exit the program
+elif input_number == 0:
+    print("Program has been exited.")
+
+# If the user enters an invalid number and loop through the program till a valid number is entered by the user
+if input_number != 1 and input_number != 2 and input_number != 3 and input_number != 0:
+    while input_number != 1 and input_number != 2 and input_number != 3 and input_number != 0:
+        print("Invalid number entered. Please enter a valid number.")
+        input_number = int(input("Enter the number against what you would like this program to do: \n1.Output a summary of each variable to a single text file(Enter 1) \n2.Save a histogram of each variable to png files(Enter 2) \n3.Output a scatter plot of each pair of variables(Enter 3) \n0.Exit \n"))
 
 # End of the program
 
