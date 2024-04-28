@@ -1,8 +1,3 @@
-# analysis.py
-# Author: Rahul Parvesh Dewan
-# This program is created for the project of a module in ATU and will analyse and give outputs for the iris dataset.
-
-# Importing the required libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
