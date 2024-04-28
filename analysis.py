@@ -29,10 +29,12 @@ if input_number == 1:
 
 # Function to save a histogram of each variable to png files
 elif input_number == 2:
-    for i in iris.columns:
-        plt.hist(iris[i])
-        plt.title(i)
-        plt.savefig(f'{i}.png')
+    for column in iris.columns[:-1]:
+        sns.histplot(data=iris, x=column)
+        plt.title(f'Histogram of {column.capitalize()} (Species-wise)')
+        plt.xlabel(f'{column.capitalize()}')
+        plt.ylabel('Frequency')
+        plt.savefig(f'{column}_histogram.png')
         plt.close()
     print("Histogram of each variable has been saved to png files.")
 
