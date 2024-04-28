@@ -15,6 +15,12 @@ iris = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/ir
 # Taking input from the user
 input_number = int(input("Enter the number against what you would like this program to do: \n1.Output a summary of each variable to a single text file(Enter 1) \n2.Save a histogram of each variable to png files(Enter 2) \n3.Output a scatter plot of each pair of variables(Enter 3) \n0.Exit \n"))
 
+# Drop duplicate rows as part of data cleaning
+iris.drop_duplicates(inplace=True)
+
+# Drop rows with missing values as part of data cleaning
+iris.dropna(inplace=True)
+
 # Function to output a summary of each variable to a single text file
 if input_number == 1:
     with open('summary.txt', 'w') as f:
