@@ -40,7 +40,7 @@ elif input_number == 2:
 
 # Function to output a scatter plot of each pair of variables
 elif input_number == 3:
-    sns.pairplot(iris, hue='species')
+    sns.pairplot(iris, hue='species',markers=["o", "s", "D"])
     plt.savefig('scatter_plot.png')
     print("Scatter plot of each pair of variables has been saved to a png file named 'scatter_plot.png'.")
 
