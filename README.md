@@ -1,5 +1,10 @@
 ### Iris Dataset Summary
 
+## How to use this repository
+1. README.md contains references, background information, and approach.
+2. iris.ipynb has description of the data in the data set.
+3. analysis.py had the code and comments
+
 ## Origin and purpose of the dataset
 
 British statistician and biologist Ronald Fisher in 1936 developed this data set. The development was done to demonstrate analysis based on classification into predifined categories.
