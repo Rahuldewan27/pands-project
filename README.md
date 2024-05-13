@@ -5,6 +5,11 @@
 2. iris.ipynb has description of the data in the data set.
 3. analysis.py had the code and comments
 
+
+## What does the program do ?
+I have taken a simplistic approach towards the program. When the program analysis.py is run it will allow user to select 1 of the 4 options. If they input 1 then program will return summary of the varaibles; if they input 2 it will return histogram of each variable, if they input 3 then scatter plot of all variables against each other in twos. Whilst inputting 0 will exit the program. If a user inputs anyother numbers then the program will give the option to input the number again. If the user inputs anything else like alphabets, characther then it will given an error and the program will need to be run again.
+
+
 ## Origin and purpose of the dataset
 
 British statistician and biologist Ronald Fisher in 1936 developed this data set. The development was done to demonstrate analysis based on classification into predifined categories.
